@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Buttons() {
+function Buttons({onClickHandler, value, title}) {
   return (
     <div>
-      Buttons
+      <button onClick={onClickHandler} value={value} className='btns'>{title}</button>
     </div>
   )
 }
